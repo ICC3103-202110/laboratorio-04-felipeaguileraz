@@ -17,7 +17,7 @@ function app(counter){
     while (true){
         const currentview = view(counter)
         console.clear()
-        console.log("Counter: ", currentview)
+        console.log("Count: ", currentview)
         console.log()
 
         var prompt = require("prompt-sync")(); 
