@@ -17,10 +17,18 @@ function app(counter){
     while (true){
         const currentview = view(counter)
         console.clear()
-        console.log(currentview)
+        console.log("Counter: ", currentview)
+        console.log()
 
         var prompt = require("prompt-sync")(); 
-        const msg = prompt("(+) (-) " )
+        console.log("(+) (-) ")
+        console.log()
+        console.log("(q) to quit ")
+        console.log()
+        const msg = prompt("What do you want to do: " )
+        if (msg === "q"){
+            break;
+        }
         counter = update(msg, counter)
         
 
